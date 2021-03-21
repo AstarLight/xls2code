@@ -87,7 +87,7 @@ conf_time = time_conf.get_conf()
 print(conf_time)
 ```
 
-## # excel转cpp文件的步骤
+# excel转cpp文件的步骤
 编表工具理论上可以通过xls生成任何语言的代码，关键在于配置编写指定语言的template，比如我们这次要通过excel表生成C++的头文件，方便被引用，可以参考xls/game_season_cpp.xls和模板template/game_timne_cpp.template.使用xls2code.py脚本编出代码文件game_time_conf.h，最后再被业务文件include调用。请参考demo_main.cpp。
 
 ```
