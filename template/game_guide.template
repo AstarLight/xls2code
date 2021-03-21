@@ -1,0 +1,25 @@
+
+
+################## 以下是自动生成的代码 ##################
+## 比赛系统  lijunshi2015@163.com
+
+GuideConf = { {% for v in content.list %}
+{{v.id}} : {
+	"desc"	: "{{v.desc}}",
+	"npc"	: "{{v.npc}}",
+	"time"	: "{{v.time}}",
+	"npc_location"	: "{{v.npc_location}}",
+	"mweek"	: "{{v.mweek}}",
+    "wday"	: "{{v.wday}}",
+},{% endfor %}
+}
+
+def get_conf():
+	return GuideConf;
+
+
+
+################## 以上是自动生成的代码 ##################
+
+################## 以下是手工编写部分 ##################
+

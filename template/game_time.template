@@ -1,0 +1,24 @@
+
+
+################## 以下是自动生成的代码 ##################
+## 比赛系统  lijunshi2015@163.com
+
+TimeConf = { {% for v in content.list %}
+{{v.id}} : {
+	"season_name"	: "{{v.season_name}}",
+	"release_start"	: "{{v.release_start}}",
+	"release_end"	: "{{v.release_end}}",
+	"exchange_end"	: "{{v.exchange_end}}",
+	"turnplate_id"	: {{v.turnplate_id}},
+},{% endfor %}
+}
+
+def get_conf():
+	return TimeConf;
+
+
+
+################## 以上是自动生成的代码 ##################
+
+################## 以下是手工编写部分 ##################
+

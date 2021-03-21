@@ -1,0 +1,23 @@
+
+
+################## 以下是自动生成的代码 ##################
+## 比赛系统  lijunshi2015@163.com
+
+RewardConf = { {% for v in content.list %}
+{{v.id}} : {
+	"season"	    : {{v.season}},
+	{% if v.icon == "" %} "icon": 0,{% else %}"icon": {{v.icon}}, {%endif%}
+	{% if v.reward_type == "" %} "reward_type": 0,{% else %}"reward_type": {{v.reward_type}}, {%endif%}
+	"level"	        : {{v.level}},
+},{% endfor %}
+}
+
+def get_conf():
+	return RewardConf;
+
+
+
+################## 以上是自动生成的代码 ##################
+
+################## 以下是手工编写部分 ##################
+
