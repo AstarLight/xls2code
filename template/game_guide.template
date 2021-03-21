@@ -5,12 +5,12 @@
 
 GuideConf = { {% for v in content.list %}
 {{v.id}} : {
-	"desc"	: "{{v.desc}}",
-	"npc"	: "{{v.npc}}",
-	"time"	: "{{v.time}}",
+	"desc"			: "{{v.desc}}",
+	"npc"			: "{{v.npc}}",
+	"time"			: "{{v.time}}",
 	"npc_location"	: "{{v.npc_location}}",
-	"mweek"	: "{{v.mweek}}",
-    "wday"	: "{{v.wday}}",
+	"mweek"			: "{{v.mweek}}",
+    "wday"			: "{{v.wday}}",
 },{% endfor %}
 }
 

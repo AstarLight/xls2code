@@ -5,7 +5,7 @@
 
 RewardConf = { {% for v in content.list %}
 {{v.id}} : {
-	"season"	    : {{v.season}},
+	"season"		: {{v.season}},
 	{% if v.icon == "" %} "icon": 0,{% else %}"icon": {{v.icon}}, {%endif%}
 	{% if v.reward_type == "" %} "reward_type": 0,{% else %}"reward_type": {{v.reward_type}}, {%endif%}
 	"level"	        : {{v.level}},
